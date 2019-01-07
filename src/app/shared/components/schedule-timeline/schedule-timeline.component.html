@@ -1,3 +1,55 @@
-<p>
-  schedule-timeline works!
-</p>
+<section class="ts-schedule">
+    <div class="container">
+        <app-heading></app-heading>
+        <div class="col-lg-8 mx-auto">
+            <div class="ts-schedule-nav">
+              <ul class="nav nav-tabs justify-content-center" role="tablist">
+                  <li class="nav-item">
+                    <a class="active" title="Click Me" href="#date1" role="tab" data-toggle="tab">
+                        <h3>5th June</h3>
+                        <span>Friday</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#date2" title="Click Me" role="tab" data-toggle="tab">        <h3>6th June</h3>
+                        <span>Saturday</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#date3" title="Click Me" role="tab" data-toggle="tab">
+                        <h3>7th June</h3>
+                        <span>Sunday</span>
+                    </a>
+                  </li>
+              </ul>
+              <!-- Tab panes -->
+            </div>
+        </div><!-- col end-->
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="tab-content schedule-tabs schedule-tabs-item">
+                <div role="tabpanel" class="tab-pane active" id="date1">
+                   <div class="row">
+                      <div class="col-lg-6" >
+                         <app-speaker-card-circle></app-speaker-card-circle>
+                      </div>
+                      <div class="col-lg-6" >
+                          <app-speaker-card-circle></app-speaker-card-circle>
+                       </div>
+                       <div class="col-lg-6" >
+                          <app-speaker-card-circle></app-speaker-card-circle>
+                       </div>
+                       <div class="col-lg-6" >
+                          <app-speaker-card-circle></app-speaker-card-circle>
+                       </div>
+                   </div><!-- row end-->
+                   <div class="schedule-listing-btn">
+                      <a href="#" class="btn">More Details</a>
+                   </div>
+                </div><!-- tab pane end-->
+             </div>
+
+          </div>
+       </div>
+    </div><!-- container end-->
+ </section>  
