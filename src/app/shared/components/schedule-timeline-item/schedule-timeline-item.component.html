@@ -1,3 +1,14 @@
-<p>
-  schedule-timeline-item works!
-</p>
+<div 
+  class="schedule-listing-item"
+  [ngClass]="right ? 'schedule-right': 'schedule-left'">
+  <img 
+    class="schedule-slot-speakers" 
+    [src]="talk.image" 
+    alt="{{talk.speaker}}">
+  <span class="schedule-slot-time">{{ talk.timeslot }}</span>
+  <h3 class="schedule-slot-title">{{ talk.title }}</h3>
+  <h4 class="schedule-slot-name">@ {{ talk.speaker }}</h4>
+  <p>
+    {{ talk.description }}
+  </p>
+</div>

@@ -1,18 +1,14 @@
 <section id="ts-speakers" class="ts-speakers speaker-classic" style="background-image:url(./assets/images/speakers/speaker_bg.png)">
     <div class="container">
-        <app-heading></app-heading>
+        <app-heading
+            smallTitle="LISTEN TO THE"
+            bigTitle="Event Speakers">
+        </app-heading>
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-              <app-speaker-card-square></app-speaker-card-square>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <app-speaker-card-square></app-speaker-card-square>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <app-speaker-card-square></app-speaker-card-square>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <app-speaker-card-square></app-speaker-card-square>
+          <div 
+            class="col-lg-3 col-md-6"
+            *ngFor="let speaker of speakers">
+              <app-speaker-card-square [speaker]="speaker"></app-speaker-card-square>
           </div>
         </div>    
         <div class="speaker-shap">

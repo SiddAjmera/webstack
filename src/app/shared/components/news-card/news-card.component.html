@@ -1,26 +1,31 @@
 <div class="post">
     <div class="post-media post-image">
-       <a href="#"><img src="assets/images/blog/blog1.jpg" class="img-fluid" alt=""></a>
+       <a href="#">
+         <img 
+          [src]="article.image" 
+          class="img-fluid" 
+          alt="">
+        </a>
     </div>
 
     <div class="post-body">
        <div class="post-meta">
           <span class="post-author">
-               <a href="#">BY Admin</a>
+               <a href="#">BY {{ article.author }}</a>
              </span>
 
           <div class="post-meta-date">
-             October 8, 2018
+             {{ article.date }}
           </div>
        </div>
        <div class="entry-header">
           <h2 class="entry-title">
-             <a href="#">Check upcoming Events</a>
+             <a href="#">{{ article.title }}</a>
           </h2>
        </div><!-- header end -->
 
        <div class="entry-content">
-          <p>How you transform your business asap technology, consumer,</p>
+          <p>{{ article.description }}</p>
        </div>
 
        <div class="post-footer">

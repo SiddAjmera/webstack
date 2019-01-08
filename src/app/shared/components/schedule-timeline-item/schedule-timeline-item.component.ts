@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-schedule-timeline-item',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedule-timeline-item.component.css']
 })
 export class ScheduleTimelineItemComponent implements OnInit {
+
+  @Input() talk: any;
+  @Input() right: boolean;
 
   constructor() { }
 

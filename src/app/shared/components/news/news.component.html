@@ -1,19 +1,17 @@
 <section class="ts-blog section-bg">
     <div class="container">
-        <app-heading></app-heading>
+        <app-heading
+            smallTitle="INFO UPDATE"
+            bigTitle="Latest News">
+        </app-heading>
         <div class="row">
-            <div class="col-lg-4">
-                <app-news-card></app-news-card>
+            <div 
+                class="col-lg-4"
+                *ngFor="let article of articles">
+                <app-news-card
+                    [article]="article">
+                </app-news-card>
             </div>
-            <!-- col end-->
-            <div class="col-lg-4">
-                <app-news-card></app-news-card>
-            </div>
-            <!-- col end-->
-            <div class="col-lg-4">
-                <app-news-card></app-news-card>
-            </div>
-            <!-- col end-->
         </div>
         <!-- row end-->
     </div>

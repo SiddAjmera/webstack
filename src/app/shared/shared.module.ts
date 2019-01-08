@@ -11,15 +11,31 @@ import { NewsCardComponent } from './components/news-card/news-card.component';
 import { NewsComponent } from './components/news/news.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { SpeakersComponent } from './components/speakers/speakers.component';
+import { EventDateComponent } from './components/event-date/event-date.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [HeadingComponent, EventCountdownComponent, AboutIntroCardComponent, SpeakerCardSquareComponent, SpeakerCardCircleComponent, ScheduleTimelineComponent, ScheduleTimelineItemComponent, NewsCardComponent, NewsComponent, SponsorsComponent, SpeakersComponent],
+  declarations: [
+    HeadingComponent, 
+    EventCountdownComponent, 
+    AboutIntroCardComponent, 
+    SpeakerCardSquareComponent, 
+    SpeakerCardCircleComponent, 
+    ScheduleTimelineComponent, 
+    ScheduleTimelineItemComponent, 
+    NewsCardComponent, 
+    NewsComponent, 
+    SponsorsComponent, 
+    SpeakersComponent, 
+    EventDateComponent, 
+    AboutSectionComponent
+  ],
   exports: [
     HeadingComponent,
-    AboutIntroCardComponent,
+    AboutSectionComponent,
     SpeakerCardSquareComponent,
     SpeakerCardCircleComponent,
     ScheduleTimelineComponent,

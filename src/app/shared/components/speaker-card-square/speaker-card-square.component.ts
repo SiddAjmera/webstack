@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-speaker-card-square',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./speaker-card-square.component.css']
 })
 export class SpeakerCardSquareComponent implements OnInit {
+
+  @Input() speaker: any;
 
   constructor() { }
 

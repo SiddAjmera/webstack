@@ -1,26 +1,16 @@
 <section class="ts-schedule">
     <div class="container">
-        <app-heading></app-heading>
+        <app-heading
+            smallTitle="SCHEDULE DETAILS"
+            bigTitle="Event Schedules">
+        </app-heading>
         <div class="col-lg-8 mx-auto">
             <div class="ts-schedule-nav">
               <ul class="nav nav-tabs justify-content-center" role="tablist">
-                  <li class="nav-item">
-                    <a class="active" title="Click Me" href="#date1" role="tab" data-toggle="tab">
-                        <h3>5th June</h3>
-                        <span>Friday</span>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#date2" title="Click Me" role="tab" data-toggle="tab">        <h3>6th June</h3>
-                        <span>Saturday</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#date3" title="Click Me" role="tab" data-toggle="tab">
-                        <h3>7th June</h3>
-                        <span>Sunday</span>
-                    </a>
-                  </li>
+                <app-event-date 
+                    *ngFor="let day of eventDays"
+                    [day]="day">
+                </app-event-date>
               </ul>
               <!-- Tab panes -->
             </div>
@@ -30,18 +20,14 @@
              <div class="tab-content schedule-tabs schedule-tabs-item">
                 <div role="tabpanel" class="tab-pane active" id="date1">
                    <div class="row">
-                      <div class="col-lg-6" >
-                         <app-speaker-card-circle></app-speaker-card-circle>
+                      <div 
+                        class="col-lg-6"
+                        *ngFor="let talk of talks; let i = index;">
+                         <app-schedule-timeline-item
+                            [talk]="talk"
+                            [right]="i % 2 !== 0">
+                        </app-schedule-timeline-item>
                       </div>
-                      <div class="col-lg-6" >
-                          <app-speaker-card-circle></app-speaker-card-circle>
-                       </div>
-                       <div class="col-lg-6" >
-                          <app-speaker-card-circle></app-speaker-card-circle>
-                       </div>
-                       <div class="col-lg-6" >
-                          <app-speaker-card-circle></app-speaker-card-circle>
-                       </div>
                    </div><!-- row end-->
                    <div class="schedule-listing-btn">
                       <a href="#" class="btn">More Details</a>

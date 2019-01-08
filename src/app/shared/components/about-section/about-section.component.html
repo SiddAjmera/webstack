@@ -1,0 +1,35 @@
+<section class="ts-intro-item section-bg">
+    <div class="container">
+       <div class="row">
+          <div 
+            class="col-lg-4 wow fadeInUp" 
+            data-wow-duration="1.5s" 
+            data-wow-delay="300ms" 
+            style="visibility: visible; animation-duration: 1.5s; animation-delay: 300ms; animation-name: fadeInUp;">
+             <div class="intro-left-content">
+                <app-heading
+                  smallTitle="WHY JOIN EXHIBIT"
+                  bigTitle="Why you should Join Event">
+                </app-heading>
+                <p>
+                   How you transform your business as tech, consumer, habits industry dynamic change, Find
+                   out from those leading the charge.
+                </p>
+                <a href="#" class="btn">Buy Ticket</a>
+             </div>
+          </div><!-- col end-->
+
+          <div class="col-lg-8">
+             <div class="row">
+                
+                <app-about-intro-card
+                  *ngFor="let intro of intros"
+                  [intro]="intro">
+                </app-about-intro-card>
+
+             </div>
+          </div><!-- col end-->
+  
+       </div><!-- row end-->
+    </div><!-- container end-->
+  </section>
