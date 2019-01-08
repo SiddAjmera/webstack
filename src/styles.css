@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "assets/css/xsIcon.css";
+@import "assets/css/responsive.css";
+@import '~font-awesome/css/font-awesome.css';
 
 /*
 	Template Name: exhibit
@@ -624,8 +626,8 @@ img.pull-right {
       position: absolute;
       left: 0;
       top: 0; }
-    .countdown .counter-item:last-of-type {
-      margin-right: 0; }
+    /* .countdown .counter-item:last-of-type {
+      margin-right: 0; } */
     .countdown .counter-item span {
       font-size: 24px;
       display: block;

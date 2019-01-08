@@ -13,6 +13,9 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { SpeakersComponent } from './components/speakers/speakers.component';
 import { EventDateComponent } from './components/event-date/event-date.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { DirectionComponent } from './components/direction/direction.component';
+import { DirectionTabContentComponent } from './components/direction-tab-content/direction-tab-content.component'
 
 @NgModule({
   imports: [
@@ -31,7 +34,10 @@ import { AboutSectionComponent } from './components/about-section/about-section.
     SponsorsComponent, 
     SpeakersComponent, 
     EventDateComponent, 
-    AboutSectionComponent
+    AboutSectionComponent,
+    HeroComponent,
+    DirectionComponent,
+    DirectionTabContentComponent
   ],
   exports: [
     HeadingComponent,
@@ -42,7 +48,11 @@ import { AboutSectionComponent } from './components/about-section/about-section.
     NewsComponent,
     NewsCardComponent,
     SponsorsComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    HeroComponent,
+    EventCountdownComponent,
+    DirectionComponent,
+    DirectionTabContentComponent
   ]  
 })
 export class SharedModule { }
