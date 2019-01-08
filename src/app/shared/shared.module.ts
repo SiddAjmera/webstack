@@ -15,29 +15,31 @@ import { EventDateComponent } from './components/event-date/event-date.component
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { DirectionComponent } from './components/direction/direction.component';
-import { DirectionTabContentComponent } from './components/direction-tab-content/direction-tab-content.component'
+import { DirectionTabContentComponent } from './components/direction-tab-content/direction-tab-content.component';
+import { RegisterButtonComponent } from './components/register-button/register-button.component'
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    HeadingComponent, 
-    EventCountdownComponent, 
-    AboutIntroCardComponent, 
-    SpeakerCardSquareComponent, 
-    SpeakerCardCircleComponent, 
-    ScheduleTimelineComponent, 
-    ScheduleTimelineItemComponent, 
-    NewsCardComponent, 
-    NewsComponent, 
-    SponsorsComponent, 
-    SpeakersComponent, 
-    EventDateComponent, 
+    HeadingComponent,
+    EventCountdownComponent,
+    AboutIntroCardComponent,
+    SpeakerCardSquareComponent,
+    SpeakerCardCircleComponent,
+    ScheduleTimelineComponent,
+    ScheduleTimelineItemComponent,
+    NewsCardComponent,
+    NewsComponent,
+    SponsorsComponent,
+    SpeakersComponent,
+    EventDateComponent,
     AboutSectionComponent,
     HeroComponent,
     DirectionComponent,
-    DirectionTabContentComponent
+    DirectionTabContentComponent,
+    RegisterButtonComponent
   ],
   exports: [
     HeadingComponent,
@@ -52,7 +54,8 @@ import { DirectionTabContentComponent } from './components/direction-tab-content
     HeroComponent,
     EventCountdownComponent,
     DirectionComponent,
-    DirectionTabContentComponent
-  ]  
+    DirectionTabContentComponent,
+    RegisterButtonComponent
+  ]
 })
 export class SharedModule { }
