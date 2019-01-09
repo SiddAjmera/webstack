@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { HeadingComponent } from './components/heading/heading.component';
 import { EventCountdownComponent } from './components/event-countdown/event-countdown.component';
 import { AboutIntroCardComponent } from './components/about-intro-card/about-intro-card.component';
@@ -21,7 +23,8 @@ import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.c
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   declarations: [
     HeadingComponent,
@@ -44,6 +47,7 @@ import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.c
     SpeakerModalComponent
   ],
   exports: [
+    AppRoutingModule,
     HeadingComponent,
     AboutSectionComponent,
     SpeakerCardSquareComponent,

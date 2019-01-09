@@ -1,4 +1,4 @@
-<header id="header" class="header header-classic">
+<header id="header" class="header header-classic sticky">
     <div class="container">
        <nav class="navbar navbar-expand-lg navbar-light">
           <!-- logo-->
@@ -10,8 +10,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
              <ul class="navbar-nav ml-auto">
-                <li class="dropdown nav-item active">
-                   <a href="#" class="" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                <li (click)="onSectionClick('hero')" class="dropdown nav-item active">
+                   <a href="#hero" class="" data-toggle="dropdown">Home</a>
+                   <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="index.html">Home One</a></li>
                       <li><a href="index-2.html">Home Two</a></li>
@@ -20,8 +21,9 @@
                       <li><a href="index-5.html">Home Five</a></li>
                    </ul> -->
                 </li>
-                <li class="dropdown nav-item">
-                   <a href="#" class="" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+                <li (click)="onSectionClick('about')" class="dropdown nav-item">
+                   <a href="#about" class="" data-toggle="dropdown">About</a>
+                   <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="about-us.html">About Us</a></li>
                       <li><a href="gallery.html">Gallery</a></li>
@@ -32,34 +34,37 @@
                       <li><a href="404.html">Erro Page</a></li>
                    </ul> -->
                 </li>
-                <li class="nav-item dropdown">
-                   <a href="#" class="" data-toggle="dropdown">Speakers <i class="fa fa-angle-down"></i></a>
+                <li (click)="onSectionClick('speakers')" class="nav-item dropdown">
+                   <a href="#speakers" class="" data-toggle="dropdown">Speakers</a>
+                   <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="speakers-1.html">Speakers-1</a></li>
                       <li><a href="speakers-2.html">Speakers-2</a></li>
                    </ul> -->
 
                 </li>
-                <li class="nav-item dropdown">
-                   <a href="#" class="" data-toggle="dropdown">Schedule <i class="fa fa-angle-down"></i></a>
+                <li (click)="onSectionClick('timeline')" class="nav-item dropdown">
+                   <a href="#timeline" class="" data-toggle="dropdown">Schedule</a>
+                   <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                          <li><a href="schedule-list.html">Schedule List</a></li>
                          <li><a href="schedule-tab-1.html">Schedule Tab 1</a></li>
                          <li><a href="schedule-tab-2.html">Schedule Tab 2</a></li>
                    </ul> -->
                 </li>
-                <li class="nav-item dropdown">
-                   <a href="#"> Blog <i class="fa fa-angle-down"></i></a>
+                <li (click)="onSectionClick('news')" class="nav-item dropdown">
+                   <a href="#news"> Blog</a>
+                   <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="news-single.html">Blog Details</a></li>
                    </ul> -->
                 </li>
-                <li class="nav-item">
-                   <a href="contact.html">Contact</a>
+                <li (click)="onSectionClick('directions')" class="nav-item">
+                   <a href="#directions">Contact</a>
                 </li>
                 <li class="header-ticket nav-item">
-                   <a class="ticket-btn btn" href="pricing.html"> Register
+                   <a class="ticket-btn btn" target="_blank" href="https://goo.gl/forms/SDDqyMhF51qoSgJ23"> Register
                    </a>
                 </li>
              </ul>
