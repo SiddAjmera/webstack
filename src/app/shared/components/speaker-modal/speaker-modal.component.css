@@ -16,7 +16,10 @@
 }
 .social{
     color: #888888;
-    padding-right: 5px; 
+    padding-right: 18px; 
+}
+.social:hover{
+    color: #e7015e; 
 }
 .text-magenta{
     color: #e7015e;
