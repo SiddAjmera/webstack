@@ -1,9 +1,33 @@
-<app-header></app-header>
-<app-hero></app-hero>
-<app-about-section></app-about-section>
-<app-speakers></app-speakers> 
-<app-schedule-timeline></app-schedule-timeline>
-<app-news></app-news>
-<app-sponsors></app-sponsors>
-<app-direction></app-direction>
-<app-footer></app-footer>
+<app-header (sectionClick)="navigateToSection($event)"></app-header>
+<div #hero>
+    <app-hero></app-hero>
+</div>
+
+<div #about>
+    <app-about-section></app-about-section>
+</div>
+
+<div #speakers>
+    <app-speakers></app-speakers> 
+</div>
+
+<div #timeline>
+    <app-schedule-timeline></app-schedule-timeline>
+</div>
+
+<div #news>
+    <app-news></app-news>
+</div>
+
+<div>
+    <!-- <app-sponsors></app-sponsors> -->
+</div>
+
+<div #directions>
+    <app-direction></app-direction>
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>
+
