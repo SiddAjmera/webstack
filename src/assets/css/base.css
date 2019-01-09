@@ -1515,8 +1515,7 @@ img.pull-right {
     background: #fff; }
   .schedule-tabs-item .schedule-listing-item.schedule-left {
     padding: 60px 125px 20px 0;
-    text-align: right;
-    margin-top: 245px; }
+    text-align: right; }
     .schedule-tabs-item .schedule-listing-item.schedule-left .schedule-slot-speakers {
       right: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-left:before {
@@ -1525,7 +1524,8 @@ img.pull-right {
       right: -21px; }
   .schedule-tabs-item .schedule-listing-item.schedule-right {
     padding: 60px 20px 0px 125px;
-    text-align: left; }
+    text-align: left;
+    margin-top: 245px }
     .schedule-tabs-item .schedule-listing-item.schedule-right .schedule-slot-speakers {
       left: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-right:before {

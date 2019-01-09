@@ -21,13 +21,57 @@
 .text-magenta{
     color: #e7015e;
 }
-@media (min-width: 768px){
+@media (min-width: 980px){
     .hidden-sm{
         display: none;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 979px){
     .hidden-xs{
         display: none;
+    }
+}
+.m-t-10{
+    margin-top: 10px;
+}
+.m-b-15{
+    margin-bottom: 15px;
+}
+.m-b-20{
+    margin-bottom: 20px;
+}
+.m-b-25{
+    margin-bottom: 25px;
+}
+
+.speaker-modal {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+@media (min-width: 576px) {
+    .speaker-modal {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .speaker-modal {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .speaker-modal {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .speaker-modal {
+        max-width: 1140px;
     }
 }
