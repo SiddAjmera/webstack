@@ -16,7 +16,8 @@ import { AboutSectionComponent } from './components/about-section/about-section.
 import { HeroComponent } from './components/hero/hero.component';
 import { DirectionComponent } from './components/direction/direction.component';
 import { DirectionTabContentComponent } from './components/direction-tab-content/direction-tab-content.component';
-import { RegisterButtonComponent } from './components/register-button/register-button.component'
+import { RegisterButtonComponent } from './components/register-button/register-button.component';
+import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { RegisterButtonComponent } from './components/register-button/register-b
     HeroComponent,
     DirectionComponent,
     DirectionTabContentComponent,
-    RegisterButtonComponent
+    RegisterButtonComponent,
+    SpeakerModalComponent
   ],
   exports: [
     HeadingComponent,
@@ -55,7 +57,8 @@ import { RegisterButtonComponent } from './components/register-button/register-b
     EventCountdownComponent,
     DirectionComponent,
     DirectionTabContentComponent,
-    RegisterButtonComponent
+    RegisterButtonComponent,
+    SpeakerModalComponent
   ]
 })
 export class SharedModule { }

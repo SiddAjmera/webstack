@@ -1,0 +1,33 @@
+.btn-close{
+    top: .5rem;
+    position: absolute;
+    right: 1.7rem;
+}
+.speaker-image  {
+    -webkit-transform: unset!important;
+    transform: unset!important;
+    height: 100%;
+}
+.company-logo.speaker-image{
+    width: auto!important;
+}
+.p-a-4{
+    padding: 4rem;
+}
+.social{
+    color: #888888;
+    padding-right: 5px; 
+}
+.text-magenta{
+    color: #e7015e;
+}
+@media (min-width: 768px){
+    .hidden-sm{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .hidden-xs{
+        display: none;
+    }
+}
