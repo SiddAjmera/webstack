@@ -7,9 +7,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent {
 
+  activeSection = 'home';
+
   @Output() sectionClick: EventEmitter<string> = new EventEmitter<string>();
 
   onSectionClick (sectionName) {
+    this.activeSection = sectionName;
     this.sectionClick.emit(sectionName);
   }
 

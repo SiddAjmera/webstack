@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-speaker-modal',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpeakerModalComponent implements OnInit {
 
+  @Input() speaker: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngOnChanges() {
+    console.log(this.speaker);
   }
 
 }

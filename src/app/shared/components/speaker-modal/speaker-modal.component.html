@@ -1,10 +1,21 @@
-<div class="modal fade" id="speakerModal" tabindex="-1" role="dialog" aria-labelledby="speakerModalModalLabel" aria-hidden="true">
-    <div class="speaker-modal modal-dialog modal-dialog-centered" role="document">
+<div 
+  class="modal fade" 
+  id="speakerModal{{speaker.id}}" 
+  tabindex="-1" 
+  role="dialog" 
+  aria-labelledby="speakerModalModalLabel" 
+  aria-hidden="true">
+    <div 
+      class="speaker-modal modal-dialog modal-dialog-centered" 
+      role="document">
       <div class="modal-content">
         <div class="modal-body p-0">
             <div class="row">
                 <div class="col-lg-6 p-r-0">
-                  <img class="speaker-image" src="assets/images/speakers/speaker7.jpg" alt="">
+                  <img 
+                    class="speaker-image" 
+                    [src]="speaker.image"
+                    alt="">
                   <button type="button" class="close btn-close hidden-sm" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -14,44 +25,52 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="ts-speaker-popup-content">
-                      <h3 class="ts-title">David Robert</h3>
-                      <span class="speakder-designation d-block m-t-10 m-b-20">Cheif Architecture</span>
-                      <img class="company-logo speaker-image m-b-15" src="assets/images/sponsors/sponsor-6.png" alt="">
+                      <h3 class="ts-title">{{ speaker.name }}</h3>
+                      <span class="speakder-designation d-block m-t-10 m-b-20">{{ speaker.designation }}</span>
+                      <img class="company-logo speaker-image m-b-15" [src]="speaker.companyLogo" alt="">
                       <p class="m-b-25">
-                        World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience
-                        gender, gender identity and expression
+                        {{ speaker.details }}
                       </p>
                       <h4 class="session-name m-b-15">
-                        Sessions by David
+                        Sessions by {{ speaker.name }}
                       </h4>
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="speaker-session-info">
-                            <h4>Day 1</h4>
+                            <h4>{{ speaker.sessionDetails.date }}</h4>
                             <span>
-                              10.30 - 11.30 am
+                              {{ speaker.sessionDetails.timeslot }}
                             </span>
                             <p class="text-magenta m-b-25">
-                              Marketing Matters
+                              {{ speaker.sessionDetails.title }}
                             </p>
                           </div>
                         </div>
                       </div>
                       <div class="ts-speakers-social">
-                        <a href="#" class="social">
-                          <i class="fa fa-facebook "></i>
+                        <a target="_blank" *ngIf="speaker.github" [href]="speaker.github" class="social">
+                          <i class="fa fa-github"></i>
                         </a>
-                        <a href="#" class="social">
+                        <a target="_blank" *ngIf="speaker.twitter" [href]="speaker.twitter" class="social">
                           <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="#" class="social">
+                        <a target="_blank" *ngIf="speaker.linkedIn" [href]="speaker.linkedIn" class="social">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" *ngIf="speaker.medium" [href]="speaker.medium" class="social">
+                          <i class="fa fa-medium"></i>
+                        </a>
+                        <a target="_blank" *ngIf="speaker.youtube" [href]="speaker.youtube" class="social">
+                          <i class="fa fa-youtube"></i>
+                        </a>
+                        <a target="_blank" *ngIf="speaker.facebook" [href]="speaker.facebook" class="social">
+                          <i class="fa fa-facebook "></i>
+                        </a>
+                        <a target="_blank" *ngIf="speaker.instagram" [href]="speaker.instagram" class="social">
                           <i class="fa fa-instagram"></i>
                         </a>
-                        <a href="#" class="social">
+                        <a target="_blank" *ngIf="speaker.googlePlus" [href]="speaker.googlePlus" class="social">
                           <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a href="#" class="social">
-                          <i class="fa fa-linkedin"></i>
                         </a>
                       </div>
                     </div>

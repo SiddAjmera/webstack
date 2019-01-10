@@ -5,13 +5,23 @@
           <a class="navbar-brand" href="index.html">
              <img src="assets/images/logos/logo-v2.png" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
              <ul class="navbar-nav ml-auto">
-                <li (click)="onSectionClick('hero')" class="dropdown nav-item active">
-                   <a href="#hero" class="" data-toggle="dropdown">Home</a>
+                <li 
+                  [class.active]="activeSection === 'hero'" 
+                  (click)="onSectionClick('hero')" 
+                  class="dropdown nav-item">
+                   <a href="#hero">Home</a>
                    <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="index.html">Home One</a></li>
@@ -21,8 +31,11 @@
                       <li><a href="index-5.html">Home Five</a></li>
                    </ul> -->
                 </li>
-                <li (click)="onSectionClick('about')" class="dropdown nav-item">
-                   <a href="#about" class="" data-toggle="dropdown">About</a>
+                <li 
+                  [class.active]="activeSection === 'about'" 
+                  (click)="onSectionClick('about')" 
+                  class="dropdown nav-item">
+                   <a href="#about">About</a>
                    <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="about-us.html">About Us</a></li>
@@ -34,8 +47,11 @@
                       <li><a href="404.html">Erro Page</a></li>
                    </ul> -->
                 </li>
-                <li (click)="onSectionClick('speakers')" class="nav-item dropdown">
-                   <a href="#speakers" class="" data-toggle="dropdown">Speakers</a>
+                <li 
+                  [class.active]="activeSection === 'speakers'" 
+                  (click)="onSectionClick('speakers')" 
+                  class="nav-item dropdown">
+                   <a href="#speakers">Speakers</a>
                    <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="speakers-1.html">Speakers-1</a></li>
@@ -43,8 +59,11 @@
                    </ul> -->
 
                 </li>
-                <li (click)="onSectionClick('timeline')" class="nav-item dropdown">
-                   <a href="#timeline" class="" data-toggle="dropdown">Schedule</a>
+                <li 
+                  [class.active]="activeSection === 'timeline'" 
+                  (click)="onSectionClick('timeline')" 
+                  class="nav-item dropdown">
+                   <a href="#timeline">Schedule</a>
                    <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
                          <li><a href="schedule-list.html">Schedule List</a></li>
@@ -52,7 +71,10 @@
                          <li><a href="schedule-tab-2.html">Schedule Tab 2</a></li>
                    </ul> -->
                 </li>
-                <li (click)="onSectionClick('news')" class="nav-item dropdown">
+                <li 
+                  [class.active]="activeSection === 'news'" 
+                  (click)="onSectionClick('news')" 
+                  class="nav-item dropdown">
                    <a href="#news"> Blog</a>
                    <!-- <i class="fa fa-angle-down"></i> -->
                    <!-- <ul class="dropdown-menu" role="menu">
@@ -60,7 +82,10 @@
                       <li><a href="news-single.html">Blog Details</a></li>
                    </ul> -->
                 </li>
-                <li (click)="onSectionClick('directions')" class="nav-item">
+                <li 
+                  [class.active]="activeSection === 'directions'" 
+                  (click)="onSectionClick('directions')" 
+                  class="nav-item">
                    <a href="#directions">Contact</a>
                 </li>
                 <li class="header-ticket nav-item">

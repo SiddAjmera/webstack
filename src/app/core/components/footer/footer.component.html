@@ -21,14 +21,15 @@
                    </li>
                 </ul>
              </div>
+
              <!-- footer social end-->
              <div class="footer-menu text-center mb-25">
                 <ul>
-                   <li><a href="#">About WebStack</a></li>
-                   <li><a href="#">Blog</a></li>
-                   <li><a href="#">Contact</a></li>
-                   <li><a href="#">Registrations</a></li>
-                   <li><a href="#">Venue</a></li>
+                   <li (click)="onSectionClick('about')"><a href="#about">About WebStack</a></li>
+                   <li (click)="onSectionClick('news')"><a href="#news">Blog</a></li>
+                   <li (click)="onSectionClick('directions')"><a href="#directions">Contact</a></li>
+                   <li><a target="_blank" href="https://goo.gl/forms/SDDqyMhF51qoSgJ23">Registrations</a></li>
+                   <li (click)="onSectionClick('directions')"><a href="#directions">Venue</a></li>
                 </ul>
              </div><!-- footer menu end-->
              <div class="copyright-text text-center">

@@ -1,6 +1,6 @@
 <div class="post">
     <div class="post-media post-image">
-       <a href="#">
+       <a [href]="article.link" target="_blank">
          <img 
           [src]="article.image" 
           class="img-fluid" 
@@ -11,7 +11,7 @@
     <div class="post-body">
        <div class="post-meta">
           <span class="post-author">
-               <a href="#">BY {{ article.author }}</a>
+               <a [href]="article.link" target="_blank">BY {{ article.author }}</a>
              </span>
 
           <div class="post-meta-date">
@@ -20,7 +20,7 @@
        </div>
        <div class="entry-header">
           <h2 class="entry-title">
-             <a href="#">{{ article.title }}</a>
+             <a [href]="article.link" target="_blank">{{ article.title }}</a>
           </h2>
        </div><!-- header end -->
 
@@ -29,7 +29,7 @@
        </div>
 
        <div class="post-footer">
-          <a href="news-single.html" class="btn-link">Read More <i class="icon icon-arrow-right"></i></a>
+          <a [href]="article.link" target="_blank" class="btn-link">Read More <i class="icon icon-arrow-right"></i></a>
        </div>
 
     </div><!-- post-body end -->

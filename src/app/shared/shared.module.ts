@@ -20,6 +20,9 @@ import { DirectionComponent } from './components/direction/direction.component';
 import { DirectionTabContentComponent } from './components/direction-tab-content/direction-tab-content.component';
 import { RegisterButtonComponent } from './components/register-button/register-button.component';
 import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.component';
+import { VenueComponent } from './components/venue/venue.component';
+import { TimeComponent } from './components/time/time.component';
+import { GetThereComponent } from './components/get-there/get-there.component';
 
 @NgModule({
   imports: [
@@ -44,7 +47,10 @@ import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.c
     DirectionComponent,
     DirectionTabContentComponent,
     RegisterButtonComponent,
-    SpeakerModalComponent
+    SpeakerModalComponent,
+    VenueComponent,
+    TimeComponent,
+    GetThereComponent
   ],
   exports: [
     AppRoutingModule,
