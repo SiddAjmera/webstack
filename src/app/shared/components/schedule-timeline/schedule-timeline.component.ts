@@ -39,8 +39,8 @@ export class ScheduleTimelineComponent implements OnInit {
       image: 'assets/images/speakers/speaker7.jpg',
       timeslot: '04.30 - 05.00 PM',
       title: 'Topic yet to be decided',
-      speaker: 'Ek Bandi',
-      description: 'The Bandi is yet to decide his topic for the talk.'
+      speaker: 'Jane Doe',
+      description: 'Jane is yet to decide her topic for the talk.'
     }
   ];
 
