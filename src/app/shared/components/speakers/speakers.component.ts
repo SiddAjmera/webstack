@@ -13,8 +13,10 @@ export class SpeakersComponent implements OnInit {
       name: 'Siddharth Ajmera',
       designation: 'Full Stack JS Developer - TCS',
       // image: 'assets/images/speakers/speaker1.jpg',
+      // tslint:disable-next-line:max-line-length
       image: 'https://scontent.fpnq2-1.fna.fbcdn.net/v/t1.0-9/35426833_1654903297897980_4957177869231980544_n.jpg?_nc_cat=111&_nc_ht=scontent.fpnq2-1.fna&oh=d17e6d51e9336ad48da5aaaa4d47338f&oe=5CD24DEF',
       // companyLogo: 'https://www.tcs.com/content/dam/tcs/images/logo/tcs50-white1.png',
+      // tslint:disable-next-line:max-line-length
       details: 'Siddharth is a Full Stack JavaScript Developer with an immense love and passion for the JavaScript(specially Angular) developer community.',
       facebook: 'https://www.facebook.com/SiddAjmera',
       twitter: 'https://www.twitter.com/SiddAjmera',
@@ -29,7 +31,7 @@ export class SpeakersComponent implements OnInit {
         timeslot: '03.00 - 03.30 pm',
         title: 'Crashing into Angular',
       }
-    }, 
+    },
     {
       id: 2,
       name: 'Pankaj Parkar',
@@ -37,6 +39,7 @@ export class SpeakersComponent implements OnInit {
       // image: 'assets/images/speakers/speaker5.jpg',
       image: 'https://pbs.twimg.com/profile_images/1024004701065338882/Qs4GJJpC_400x400.jpg',
       companyLogo: 'https://labs.synerzip.com/wp-content/themes/synerzip/beta_images/header-black-logo.png',
+      // tslint:disable-next-line:max-line-length
       details: 'Pankaj is a three-time Microsoft MVP and a Team Lead at Synerzip. He\'s an Angular Enthusiast with around 6 years of experience in the industry. He\'s also an OpenSource Contributor and an OSS Lover',
       facebook: 'https://www.facebook.com/pankaj.parkar',
       twitter: 'https://twitter.com/pankajparkar',
@@ -55,9 +58,10 @@ export class SpeakersComponent implements OnInit {
       id: 3,
       name: 'Akshay Milmile',
       designation: 'Full Stack JS Developer - TCS',
-      image: 'https://pbs.twimg.com/profile_images/1058594005263491072/psCeJF5B_400x400.jpg',
-      // image: 'assets/images/speakers/speaker3.jpg',
+      // image: 'https://pbs.twimg.com/profile_images/1058594005263491072/psCeJF5B_400x400.jpg',
+      image: 'assets/images/speakers/akshay.jpg',
       // companyLogo: 'https://www.tcs.com/content/dam/tcs/images/logo/tcs50-white1.png',
+      // tslint:disable-next-line:max-line-length
       details: 'Akshay is a JavaScript junkie and loves writing Apps that run on Web, Mobile, and Voice channels, to deliver Omnichannel experiences.',
       facebook: '',
       twitter: 'https://twitter.com/_akshay_milmile',
@@ -74,23 +78,26 @@ export class SpeakersComponent implements OnInit {
       }
     }, {
       id: 4,
-      name: 'Jane Doe',
-      designation: 'Role, Company',
-      image: 'assets/images/speakers/speaker7.jpg',
+      name: 'Jagdeep Soni',
+      designation: 'Solution Architect, TCS',
+      // tslint:disable-next-line:max-line-length
+      image: 'https://scontent.fpnq2-1.fna.fbcdn.net/v/t1.0-9/27750647_1609902509057835_604483265165669179_n.jpg?_nc_cat=109&_nc_ht=scontent.fpnq2-1.fna&oh=76b18049eb616ecbf5df6a68536571b4&oe=5CC952D5',
+      // image: 'assets/images/speakers/speaker7.jpg',
       // companyLogo: 'https://www.tcs.com/content/dam/tcs/images/logo/tcs50-white1.png',
-      details: 'We\'re still looking for a Jane Doe who is interested in speaking at the event.',
-      facebook: '',
-      twitter: '',
-      instagram: '',
+      // tslint:disable-next-line:max-line-length
+      details: 'Jagdeep works as a Solution Architect at TCS. Apart from being an ocassional poet and a random traveller, he\'s also into hiking, marathons, and software development.',
+      facebook: 'https://www.facebook.com/jss.phoenix',
+      twitter: 'https://twitter.com/js_soni',
+      instagram: 'https://www.instagram.com/reach.jagdeep/',
       googlePlus: '',
-      linkedIn: '',
-      github: '',
+      linkedIn: 'https://www.linkedin.com/in/jssoni/',
+      github: 'https://github.com/Jagdeep1',
       medium: '',
       youtube: '',
       sessionDetails: {
         date: '26 Jan',
         timeslot: '04.30 - 05.00 pm',
-        title: 'Topic yet to be decided',
+        title: 'Angular Style Guide',
       }
     }
   ];
