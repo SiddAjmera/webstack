@@ -21,14 +21,14 @@ export class ScheduleTimelineComponent implements OnInit {
       timeslot: '03.00 - 03.30 PM',
       title: 'Crashing into Angular',
       speaker: 'Siddharth Ajmera',
-      description: 'A very short, crisp, and consize introduction to Angular and all it\'s building blocks. You\'ll learn about Modules, Components, Directives, Pipes, Guards etc in Angular in this talk.'
+      description: 'A very short, crisp, and concise introduction to Angular and all it\'s building blocks. You\'ll learn about Modules, Components, Directives, Pipes, Guards etc in Angular in this talk.'
     },
     {
       image: 'https://pbs.twimg.com/profile_images/1024004701065338882/Qs4GJJpC_400x400.jpg',
       timeslot: '03.30 - 04.00 AM',
       title: 'Topic yet to be decided',
       speaker: 'Pankaj Parkar',
-      description: 'Pankaj is yet to decide his topic for the talk.'
+      description: 'A layman\'s guide to Unit Testing. This session will cover the basics of Unit Testing Angular Apps with Karma and Jasmine.'
     },
     {
       image: 'assets/images/speakers/akshay.jpg',
