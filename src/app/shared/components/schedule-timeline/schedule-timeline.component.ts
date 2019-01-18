@@ -26,7 +26,7 @@ export class ScheduleTimelineComponent implements OnInit {
     {
       image: 'https://pbs.twimg.com/profile_images/1024004701065338882/Qs4GJJpC_400x400.jpg',
       timeslot: '03.30 - 04.00 AM',
-      title: 'Topic yet to be decided',
+      title: 'Unit Testing Angular Apps',
       speaker: 'Pankaj Parkar',
       description: 'A layman\'s guide to Unit Testing. This session will cover the basics of Unit Testing Angular Apps with Karma and Jasmine.'
     },
