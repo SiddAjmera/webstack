@@ -7,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class EventCountdownComponent implements OnInit, OnDestroy {
 
-  countDownDate = new Date('Jan 26, 2019 15:00:00').getTime();
+  countDownDate = new Date('Feb 16, 2019 15:00:00').getTime();
   interval;
   days;
   hours;

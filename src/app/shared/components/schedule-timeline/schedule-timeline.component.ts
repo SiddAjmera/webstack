@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ScheduleTimelineComponent implements OnInit {
 
   eventDays = [
-    { isActive: true, date: '26th January', dayOfWeek: 'SATURDAY' },
+    { isActive: true, date: '16th February', dayOfWeek: 'SATURDAY' },
     /* { isActive: false, date: '6th June', dayOfWeek: 'SATURDAY' },
     { isActive: false, date: '7th June', dayOfWeek: 'SUNDAY' }, */
   ];
