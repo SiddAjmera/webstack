@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SpeakerCardSquareComponent implements OnInit {
 
   @Input() speaker: any;
+  @Input() imgStyle: any;
 
   constructor() { }
 

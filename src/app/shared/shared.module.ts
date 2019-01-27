@@ -23,6 +23,8 @@ import {SpeakerModalComponent } from './components/speaker-modal/speaker-modal.c
 import { VenueComponent } from './components/venue/venue.component';
 import { TimeComponent } from './components/time/time.component';
 import { GetThereComponent } from './components/get-there/get-there.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { FunFactComponent } from './components/fun-fact/fun-fact.component';
 
 @NgModule({
   imports: [
@@ -50,7 +52,9 @@ import { GetThereComponent } from './components/get-there/get-there.component';
     SpeakerModalComponent,
     VenueComponent,
     TimeComponent,
-    GetThereComponent
+    GetThereComponent,
+    ExperienceComponent,
+    FunFactComponent
   ],
   exports: [
     AppRoutingModule,
@@ -68,7 +72,9 @@ import { GetThereComponent } from './components/get-there/get-there.component';
     DirectionComponent,
     DirectionTabContentComponent,
     RegisterButtonComponent,
-    SpeakerModalComponent
+    SpeakerModalComponent,
+    ExperienceComponent,
+    FunFactComponent
   ]
 })
 export class SharedModule { }

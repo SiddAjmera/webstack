@@ -1,6 +1,6 @@
 <section 
   id="ts-speakers" 
-  class="ts-speakers speaker-classic" 
+  class="ts-speakers" 
   style="background-image:url(./assets/images/speakers/speaker_bg.png)">
   <div class="container">
     <app-heading
@@ -11,7 +11,7 @@
       <div 
         class="col-lg-3 col-md-6"
         *ngFor="let speaker of speakers; let i = index;">
-          <app-speaker-card-square [speaker]="speaker"></app-speaker-card-square>
+          <app-speaker-card-square [speaker]="speaker" [imgStyle]="'speaker-classic'"></app-speaker-card-square>
       </div>
     </div>    
     <div class="speaker-shap">
