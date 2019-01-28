@@ -8,10 +8,12 @@
       bigTitle="Event Speakers">
     </app-heading>
     <div class="row">
-      <div 
-        class="col-lg-3 col-md-6"
+      <div data-wow-duration="1.5s" data-wow-delay="400ms"
+        class="col-lg-3 col-md-6 wow fadeInUp"
+        style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;"
         *ngFor="let speaker of speakers; let i = index;">
-          <app-speaker-card-square [speaker]="speaker" [imgStyle]="'speaker-classic'"></app-speaker-card-square>
+          <app-speaker-card [speaker]="speaker"></app-speaker-card>
+          <!-- add this for square cards [imgStyle]="'speaker-classic'" -->
       </div>
     </div>    
     <div class="speaker-shap">
