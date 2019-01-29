@@ -1,25 +1,41 @@
-<section 
-  id="ts-speakers" 
-  class="ts-speakers" 
-  style="background-image:url(./assets/images/speakers/speaker_bg.png)">
+<section
+  id="ts-speakers"
+  class="ts-speakers"
+  style="background-image:url(./assets/images/speakers/speaker_bg.png)"
+>
   <div class="container">
-    <app-heading
-      smallTitle="LISTEN TO THE"
-      bigTitle="Event Speakers">
+    <app-heading smallTitle="LISTEN TO THE" bigTitle="Event Speakers">
     </app-heading>
-    <div class="row">
-      <div data-wow-duration="1.5s" data-wow-delay="400ms"
+    <div class="row" *ngIf="(speakers$ | async) as speakers">
+      <div
+        data-wow-duration="1.5s"
+        data-wow-delay="400ms"
         class="col-lg-3 col-md-6 wow fadeInUp"
         style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;"
-        *ngFor="let speaker of speakers; let i = index;">
-          <app-speaker-card [speaker]="speaker"></app-speaker-card>
-          <!-- add this for square cards [imgStyle]="'speaker-classic'" -->
+        *ngFor="let speaker of speakers; let i = index"
+      >
+        <!-- <app-speaker-card [speaker]="speaker"></app-speaker-card> -->
+        <app-speaker-card [speaker]="speaker" [imgStyle]="'speaker-classic'">
+        </app-speaker-card>
+        <!-- add this for square cards [imgStyle]="'speaker-classic'" -->
       </div>
-    </div>    
-    <div class="speaker-shap">
-      <img class="shap1" src="assets/images/shap/home_speaker_memphis1.png" alt="">
-      <img class="shap2" src="assets/images/shap/home_speaker_memphis2.png" alt="">
-      <img class="shap3" src="assets/images/shap/home_speaker_memphis3.png" alt="">
     </div>
-  </div>  
-</section> 
+    <div class="speaker-shap">
+      <img
+        class="shap1"
+        src="assets/images/shap/home_speaker_memphis1.png"
+        alt=""
+      />
+      <img
+        class="shap2"
+        src="assets/images/shap/home_speaker_memphis2.png"
+        alt=""
+      />
+      <img
+        class="shap3"
+        src="assets/images/shap/home_speaker_memphis3.png"
+        alt=""
+      />
+    </div>
+  </div>
+</section>

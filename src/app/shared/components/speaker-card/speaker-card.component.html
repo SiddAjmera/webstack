@@ -1,21 +1,22 @@
-<div [ngClass]="imgStyle">
+<div [ngClass]="imgStyle" *ngIf="speaker">
   <div class="ts-speaker">
     <div class="speaker-img">
-       <img class="img-fluid" [src]="speaker.image" alt="">
-       <span 
+      <img class="img-fluid" [src]="speaker.image" alt="" />
+      <span
         class="view-speaker ts-image-popup clickable"
-        data-toggle="modal" 
-        [attr.data-target]="'#speakerModal' + speaker.id" 
-        data-effect="mfp-zoom-in">
-          <i class="icon icon-plus"></i>
+        data-toggle="modal"
+        [attr.data-target]="'#speakerModal' + speaker.id"
+        data-effect="mfp-zoom-in"
+      >
+        <i class="icon icon-plus"></i>
       </span>
       <app-speaker-modal [speaker]="speaker"></app-speaker-modal>
     </div>
     <div class="ts-speaker-info">
-      <h3 class="ts-title"><a href="#">{{ speaker.name }}</a></h3>
-      <p>
-        {{ speaker.designation }}
-      </p>
+      <h3 class="ts-title">
+        <a href="#">{{ speaker.name }}</a>
+      </h3>
+      <p>{{ speaker.designation }}</p>
     </div>
   </div>
 </div>

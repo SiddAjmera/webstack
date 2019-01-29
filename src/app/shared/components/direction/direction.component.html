@@ -1,27 +1,49 @@
-<section class="ts-map-direction wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms" style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;">
+<section
+  class="ts-map-direction wow fadeInUp"
+  data-wow-duration="1.5s"
+  data-wow-delay="400ms"
+  style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;"
+>
   <div class="container">
     <div class="row">
       <div class="col-lg-5">
-        <app-heading smallTitle="Reach us" bigTitle="Get Direction to the Event Hall">
+        <app-heading
+          smallTitle="Reach us"
+          bigTitle="Get Direction to the Event Hall"
+        >
         </app-heading>
 
         <div class="ts-map-tabs">
           <ul class="nav" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Venue</a>
+              <a
+                class="nav-link active"
+                href="#profile"
+                role="tab"
+                data-toggle="tab"
+                >Venue</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Time</a>
+              <a class="nav-link" href="#buzz" role="tab" data-toggle="tab"
+                >Time</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#references" role="tab" data-toggle="tab">How to get there</a>
+              <a
+                class="nav-link"
+                href="#references"
+                role="tab"
+                data-toggle="tab"
+                >How to get there</a
+              >
             </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content direction-tabs">
             <div role="tabpanel" class="tab-pane active" id="profile">
-                <!-- <app-direction-tab-content></app-direction-tab-content> -->
+              <!-- <app-direction-tab-content></app-direction-tab-content> -->
               <app-venue></app-venue>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="buzz">
@@ -31,26 +53,24 @@
               <app-get-there></app-get-there>
             </div>
           </div>
-
         </div>
         <!-- map tabs end-->
-
       </div>
       <!-- col end-->
       <div class="col-lg-6 offset-lg-1">
         <div class="ts-map">
           <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.837836283408!2d73.68295171497505!3d18.581348287373665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb6cf733ec41%3A0x1f14e2a2315cbb1b!2sS1+Poorna%2C+TCS!5e0!3m2!1sen!2sin!4v1548185107862" 
-                width="400" 
-                height="300" 
-                frameborder="0" 
-                style="border:0" 
-                allowfullscreen>
+            <div class="gmap_canvas" *ngIf="(map$ | async) as map">
+              <iframe
+                [src]="map.src | safe: 'resourceUrl'"
+                [width]="map.width"
+                [height]="map.height"
+                [attr.frameborder]="map.frameborder"
+                [style]="map.style"
+                [attr.allowfullscreen]="map.allowfullscreen"
+              >
               </iframe>
             </div>
-
           </div>
         </div>
       </div>
@@ -59,9 +79,9 @@
   </div>
   <!-- container end-->
   <div class="speaker-shap">
-    <img class="shap1" src="assets/images/shap/Direction_memphis3.png" alt="">
-    <img class="shap2" src="assets/images/shap/Direction_memphis2.png" alt="">
-    <img class="shap3" src="assets/images/shap/Direction_memphis4.png" alt="">
-    <img class="shap4" src="assets/images/shap/Direction_memphis1.png" alt="">
+    <img class="shap1" src="assets/images/shap/Direction_memphis3.png" alt="" />
+    <img class="shap2" src="assets/images/shap/Direction_memphis2.png" alt="" />
+    <img class="shap3" src="assets/images/shap/Direction_memphis4.png" alt="" />
+    <img class="shap4" src="assets/images/shap/Direction_memphis1.png" alt="" />
   </div>
 </section>

@@ -6,10 +6,11 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgwWowModule } from 'ngx-wow';
+import { AppFirebaseModule } from './app-firebase/app-firebase.module';
 
 @NgModule({
   declarations: [ AppComponent ],
-  imports: [ BrowserModule, CoreModule, SharedModule, AppRoutingModule, NgwWowModule],
+  imports: [ AppFirebaseModule, BrowserModule, CoreModule, SharedModule, AppRoutingModule, NgwWowModule],
   exports: [],
   entryComponents: [],
   providers: [],

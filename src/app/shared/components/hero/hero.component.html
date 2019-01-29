@@ -3,10 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="banner-content-wrap text-center">
+          <div 
+            class="banner-content-wrap text-center"
+            *ngIf="heroComponentData$ | async as data">
 
-            <p class="banner-info">16 February 2019, TCS Sahyadri Park, Pune</p>
-            <h1 class="banner-title">WebStack Angular Meetup</h1>
+            <p class="banner-info">{{ data.dateAndVenueText || '16 February 2019, TCS Sahyadri Park, Pune' }}</p>
+            <h1 class="banner-title">{{ data.meetupName || 'WebStack Angular Meetup' }}</h1>
 
             <div class="countdown">
               <app-event-countdown></app-event-countdown>

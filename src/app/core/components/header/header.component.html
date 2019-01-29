@@ -1,43 +1,46 @@
 <header id="header" class="header header-classic sticky fade_down_effect">
-    <div class="container">
-       <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- logo-->
-          <a class="navbar-brand" routerLink="/">
-             <img src="assets/images/logos/WebStackLogo.png" alt="">
-          </a>
-          <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarNavDropdown" 
-            aria-controls="navbarNavDropdown" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-             <ul class="navbar-nav ml-auto">
-                <li 
-                  [class.active]="activeSection === 'hero'" 
-                  (click)="onSectionClick('hero')" 
-                  class="dropdown nav-item">
-                   <a href="#hero">Home</a>
-                   <!-- <i class="fa fa-angle-down"></i> -->
-                   <!-- <ul class="dropdown-menu" role="menu">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- logo-->
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/images/logos/WebStackLogo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li
+            [class.active]="activeSection === 'hero'"
+            (click)="onSectionClick('hero')"
+            class="dropdown nav-item"
+          >
+            <a href="#hero">Home</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="index.html">Home One</a></li>
                       <li><a href="index-2.html">Home Two</a></li>
                       <li><a href="index-3.html">Home Three</a></li>
                       <li><a href="index-4.html">Home Four</a></li>
                       <li><a href="index-5.html">Home Five</a></li>
                    </ul> -->
-                </li>
-                <li 
-                  [class.active]="activeSection === 'about'" 
-                  (click)="onSectionClick('about')" 
-                  class="dropdown nav-item">
-                   <a href="#about">About</a>
-                   <!-- <i class="fa fa-angle-down"></i> -->
-                   <!-- <ul class="dropdown-menu" role="menu">
+          </li>
+          <li
+            [class.active]="activeSection === 'about'"
+            (click)="onSectionClick('about')"
+            class="dropdown nav-item"
+          >
+            <a href="#about">About</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="about-us.html">About Us</a></li>
                       <li><a href="gallery.html">Gallery</a></li>
                       <li><a href="faq.html">FAQ</a></li>
@@ -46,54 +49,63 @@
                       <li><a href="venue.html">Venue</a></li>
                       <li><a href="404.html">Erro Page</a></li>
                    </ul> -->
-                </li>
-                <li 
-                  [class.active]="activeSection === 'speakers'" 
-                  (click)="onSectionClick('speakers')" 
-                  class="nav-item dropdown">
-                   <a href="#speakers">Speakers</a>
-                   <!-- <i class="fa fa-angle-down"></i> -->
-                   <!-- <ul class="dropdown-menu" role="menu">
+          </li>
+          <li
+            [class.active]="activeSection === 'speakers'"
+            (click)="onSectionClick('speakers')"
+            class="nav-item dropdown"
+          >
+            <a href="#speakers">Speakers</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="speakers-1.html">Speakers-1</a></li>
                       <li><a href="speakers-2.html">Speakers-2</a></li>
                    </ul> -->
-
-                </li>
-                <li 
-                  [class.active]="activeSection === 'timeline'" 
-                  (click)="onSectionClick('timeline')" 
-                  class="nav-item dropdown">
-                   <a href="#timeline">Schedule</a>
-                   <!-- <i class="fa fa-angle-down"></i> -->
-                   <!-- <ul class="dropdown-menu" role="menu">
+          </li>
+          <li
+            [class.active]="activeSection === 'timeline'"
+            (click)="onSectionClick('timeline')"
+            class="nav-item dropdown"
+          >
+            <a href="#timeline">Schedule</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
                          <li><a href="schedule-list.html">Schedule List</a></li>
                          <li><a href="schedule-tab-1.html">Schedule Tab 1</a></li>
                          <li><a href="schedule-tab-2.html">Schedule Tab 2</a></li>
                    </ul> -->
-                </li>
-                <li 
-                  [class.active]="activeSection === 'news'" 
-                  (click)="onSectionClick('news')" 
-                  class="nav-item dropdown">
-                   <a href="#news"> Blog</a>
-                   <!-- <i class="fa fa-angle-down"></i> -->
-                   <!-- <ul class="dropdown-menu" role="menu">
+          </li>
+          <li
+            [class.active]="activeSection === 'news'"
+            (click)="onSectionClick('news')"
+            class="nav-item dropdown"
+          >
+            <a href="#news"> Blog</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="news-single.html">Blog Details</a></li>
                    </ul> -->
-                </li>
-                <li 
-                  [class.active]="activeSection === 'directions'" 
-                  (click)="onSectionClick('directions')" 
-                  class="nav-item">
-                   <a href="#directions">Contact</a>
-                </li>
-                <li class="header-ticket nav-item">
-                   <a class="ticket-btn btn" target="_blank" href="https://www.meetup.com/WebStack/events/258329974/"> Register
-                   </a>
-                </li>
-             </ul>
-          </div>
-       </nav>
-    </div><!-- container end-->
- </header>
+          </li>
+          <li
+            [class.active]="activeSection === 'directions'"
+            (click)="onSectionClick('directions')"
+            class="nav-item"
+          >
+            <a href="#directions">Contact</a>
+          </li>
+          <li class="header-ticket nav-item">
+            <a
+              class="ticket-btn btn"
+              target="_blank"
+              [href]="registerLink$ | async"
+            >
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- container end-->
+</header>

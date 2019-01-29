@@ -1,51 +1,14 @@
-<div class="direction-tabs-content">
-  <h3>26th January, 2019 | 03.00 PM to 05.00 PM</h3>
-  <p class="derecttion-vanue">
-    The meetup will start at 03.00 PM and will end at 05.00 PM.
-    <br> Please make sure that you reach 15-30 minutes prior to the event start.
-  </p>
+<div class="direction-tabs-content" *ngIf="(timeData$ | async) as timeData">
+  <h3>{{ timeData.dateTimeString }}</h3>
+  <p class="derecttion-vanue">{{ timeData.description }}</p>
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6" *ngFor="let talk of (talks$ | async)">
       <div class="contact-info-box">
-        <h3>03.00 - 03.30 PM</h3>
-        <p>
-          <strong>Name:</strong> Siddharth Ajmera</p>
-        <p>
-          <strong>Talk Level:</strong> Beginner</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="contact-info-box">
-        <h3>03.30 - 04.00 PM</h3>
-        <p>
-          <strong>Name:</strong> Pankaj Parkar</p>
-        <p>
-          <strong>Talk Level:</strong> Beginner</p>
+        <h3>{{ talk.timeslot }}</h3>
+        <p><strong>Name:</strong> {{ talk.speaker }}</p>
+        <p><strong>Talk Level:</strong> {{ talk.level }}</p>
       </div>
     </div>
   </div>
-  <!-- row end-->
-  <br>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="contact-info-box">
-        <h3>04.00 - 04.30 PM</h3>
-        <p>
-          <strong>Name:</strong> Akshay Milmile</p>
-        <p>
-          <strong>Talk Level:</strong> Beginner</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="contact-info-box">
-        <h3>04.30 - 05.00 PM</h3>
-        <p>
-          <strong>Name:</strong> Jagdeep Soni</p>
-        <p>
-          <strong>Talk Level:</strong> Beginner</p>
-      </div>
-    </div>
-  </div>
-  <!-- row end-->
 </div>

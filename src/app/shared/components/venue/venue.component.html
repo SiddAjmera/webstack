@@ -1,34 +1,34 @@
-<div class="direction-tabs-content">
-    <h3>LR 1, S1, Poorna</h3>
-    <p class="derecttion-vanue">
-      <br> TCS Sahyadri Park,
-      <br> Hinjawadi-Maan, Phase 3, 
-      <br> Pune, Maharashtra, India 411057
-    </p>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="contact-info-box">
-          <h3>Registration info </h3>
-          <p>
-            <strong>Name:</strong> Siddharth Ajmera</p>
-          <p>
-            <strong>Phone:</strong> 963-753-4304</p>
-          <p>
-            <strong>Email: </strong> siddajmera@outlook.com</p>
-        </div>
-  
-      </div>
-      <div class="col-md-6">
-        <div class="contact-info-box">
-          <h3>Programme Details </h3>
-          <p>
-            <strong>Name:</strong> Jagdeep Soni</p>
-          <p>
-            <strong>Phone:</strong> 844-648-2821</p>
-          <p>
-            <strong>Email: </strong> reach.jagdeep@gmail.com</p>
-        </div>
+<div class="direction-tabs-content" *ngIf="(venueDetails$ | async) as details">
+  <h3>{{ details.roomAndBuilding }}</h3>
+  <p class="derecttion-vanue">
+    <br />
+    {{ details.campus }}, <br />
+    {{ details.road }}, <br />
+    {{ details.cityStateAndZipcode }}
+  </p>
+  <div class="row">
+    <div class="col-md-6">
+      <div
+        class="contact-info-box"
+        *ngIf="details.registrationInfo as registrationInfo"
+      >
+        <h3>Registration info</h3>
+        <p><strong>Name:</strong> {{ registrationInfo.name }}</p>
+        <p><strong>Phone:</strong> {{ registrationInfo.phone }}</p>
+        <p><strong>Email: </strong> {{ registrationInfo.email }}</p>
       </div>
     </div>
-    <!-- row end-->
+    <div class="col-md-6">
+      <div
+        class="contact-info-box"
+        *ngIf="details.programDetails as programDetails"
+      >
+        <h3>Programme Details</h3>
+        <p><strong>Name:</strong> {{ programDetails.name }}</p>
+        <p><strong>Phone:</strong> {{ programDetails.phone }}</p>
+        <p><strong>Email: </strong> {{ programDetails.email }}</p>
+      </div>
+    </div>
   </div>
+  <!-- row end-->
+</div>

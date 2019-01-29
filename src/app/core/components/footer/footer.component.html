@@ -1,41 +1,57 @@
 <footer class="ts-footer">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-8 mx-auto">
-             <div class="ts-footer-social text-center mb-30">
-                <ul>
-                   <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                   </li>
-                   <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                   </li>
-                   <li>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                   </li>
-                   <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                   </li>
-                   <li>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                   </li>
-                </ul>
-             </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="ts-footer-social text-center mb-30">
+          <ul *ngIf="(footerData$ | async) as links">
+            <li>
+              <a _target="blank" [href]="links.facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a _target="blank" [href]="links.twitter"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a _target="blank" [href]="links.meetup"
+                ><i class="fa fa-meetup"></i
+              ></a>
+            </li>
+            <li>
+              <a _target="blank" [href]="links.slack"
+                ><i class="fa fa-slack"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
 
-             <!-- footer social end-->
-             <div class="footer-menu text-center mb-25">
-                <ul>
-                   <li (click)="onSectionClick('about')"><a href="#about">About WebStack</a></li>
-                   <li (click)="onSectionClick('news')"><a href="#news">Blog</a></li>
-                   <li (click)="onSectionClick('directions')"><a href="#directions">Contact</a></li>
-                   <li><a target="_blank" href="https://goo.gl/forms/SDDqyMhF51qoSgJ23">Registrations</a></li>
-                   <li (click)="onSectionClick('directions')"><a href="#directions">Venue</a></li>
-                </ul>
-             </div><!-- footer menu end-->
-             <div class="copyright-text text-center">
-                <p>Copyright © 2018 WebStack. All Rights Reserved.</p>
-             </div>
-          </div>
-       </div>
+        <!-- footer social end-->
+        <div class="footer-menu text-center mb-25">
+          <ul>
+            <li (click)="onSectionClick('about')">
+              <a href="#about">About WebStack</a>
+            </li>
+            <li (click)="onSectionClick('news')"><a href="#news">Blog</a></li>
+            <li (click)="onSectionClick('directions')">
+              <a href="#directions">Contact</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://goo.gl/forms/SDDqyMhF51qoSgJ23"
+                >Registrations</a
+              >
+            </li>
+            <li (click)="onSectionClick('directions')">
+              <a href="#directions">Venue</a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer menu end-->
+        <div class="copyright-text text-center">
+          <p>Copyright © 2018 WebStack. All Rights Reserved.</p>
+        </div>
+      </div>
     </div>
- </footer>
+  </div>
+</footer>
