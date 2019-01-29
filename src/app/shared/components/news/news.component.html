@@ -6,7 +6,9 @@
         </app-heading>
         <div class="row">
             <div 
-                class="col-lg-4"
+                class="col-lg-4 wow fadeInUp" 
+                data-wow-duration="1.5s" data-wow-delay="400ms"
+                style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;"
                 *ngFor="let article of articles">
                 <app-news-card
                     [article]="article">

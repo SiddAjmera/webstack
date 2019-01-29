@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpeakerCardSquareComponent } from './speaker-card-square.component';
+import { SpeakerCardComponent } from './speaker-card.component';
 
-describe('SpeakerCardSquareComponent', () => {
-  let component: SpeakerCardSquareComponent;
-  let fixture: ComponentFixture<SpeakerCardSquareComponent>;
+describe('SpeakerCardComponent', () => {
+  let component: SpeakerCardComponent;
+  let fixture: ComponentFixture<SpeakerCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpeakerCardSquareComponent ]
+      declarations: [ SpeakerCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpeakerCardSquareComponent);
+    fixture = TestBed.createComponent(SpeakerCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
