@@ -1,0 +1,99 @@
+<div *ngIf="meetup">
+  <div
+    id="page-banner-area"
+    class="page-banner-area"
+    style="background-image:url(../../../assets/images/hero_area/banner_bg.jpeg)"
+  >
+    <!-- Subpage title start -->
+    <div class="page-banner-title">
+      <div class="text-center">
+        <h2>{{ meetup.eventName }}</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a routerLink="/">WebStack /</a>
+          </li>
+          <li>
+            {{ meetup.eventDate }}
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- Subpage title end -->
+  </div>
+
+  <section class="ts-schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-title">
+            Sessions List
+          </h2>
+        </div>
+        <!-- col end-->
+      </div>
+      <!-- row end-->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tab-content schedule-tabs">
+            <div role="tabpanel" class="tab-pane active" id="date3">
+              <div *ngFor="let talk of meetup.talks" class="schedule-listing">
+                <div class="schedule-slot-time">
+                  <span> {{ talk.timeslot }}</span>
+                  {{ talk.level }}
+                </div>
+                <div class="schedule-slot-info">
+                  <a routerLink="./">
+                    <img
+                      class="schedule-slot-speakers"
+                      [src]="talk.image"
+                      alt="{{ talk.title }} by {{ talk.speaker }}"
+                    />
+                  </a>
+                  <div class="schedule-slot-info-content">
+                    <h3 class="schedule-slot-title">
+                      {{ talk.title }}
+                      <strong>@ {{ talk.speaker }}</strong>
+                      <strong>
+                        <button (click)="talk.show = !talk.show">
+                          {{ talk.show ? "Hide" : "Show" }} Presentation
+                        </button>
+                      </strong>
+                    </h3>
+                    <p>
+                      {{ talk.description }}
+                    </p>
+                    <iframe
+                      *ngIf="talk.show"
+                      [src]="talk.slideLink | safe: 'resourceUrl'"
+                      frameborder="0"
+                      width="480"
+                      height="299"
+                      allowfullscreen="true"
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                    ></iframe>
+                  </div>
+                  <!--Info content end -->
+                </div>
+                <!-- Slot info end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container end-->
+    <div class="speaker-shap">
+      <img
+        class="shap2"
+        src="../../../assets/images/shap/home_schedule_memphis1.png"
+        alt=""
+      />
+      <img
+        class="shap1"
+        src="../../../assets/images/shap/home_schedule_memphis2.png"
+        alt=""
+      />
+    </div>
+  </section>
+</div>

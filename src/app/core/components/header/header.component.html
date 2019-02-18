@@ -23,7 +23,18 @@
             (click)="onSectionClick('hero')"
             class="dropdown nav-item"
           >
-            <a href="#hero">Home</a>
+            <a routerLink="#hero">Home</a>
+            <!-- <i class="fa fa-angle-down"></i> -->
+            <!-- <ul class="dropdown-menu" role="menu">
+                      <li><a href="index.html">Home One</a></li>
+                      <li><a href="index-2.html">Home Two</a></li>
+                      <li><a href="index-3.html">Home Three</a></li>
+                      <li><a href="index-4.html">Home Four</a></li>
+                      <li><a href="index-5.html">Home Five</a></li>
+                   </ul> -->
+          </li>
+          <li routerLinkActive="active" class="dropdown nav-item">
+            <a routerLink="/meetups/Feb-Angular-2019">Past Meetup</a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="index.html">Home One</a></li>
@@ -38,7 +49,7 @@
             (click)="onSectionClick('about')"
             class="dropdown nav-item"
           >
-            <a href="#about">About</a>
+            <a routerLink="#about">About</a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="about-us.html">About Us</a></li>
@@ -55,7 +66,7 @@
             (click)="onSectionClick('speakers')"
             class="nav-item dropdown"
           >
-            <a href="#speakers">Speakers</a>
+            <a routerLink="#speakers">Speakers</a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="speakers-1.html">Speakers-1</a></li>
@@ -67,7 +78,7 @@
             (click)="onSectionClick('timeline')"
             class="nav-item dropdown"
           >
-            <a href="#timeline">Schedule</a>
+            <a routerLink="#timeline">Schedule</a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <!-- <ul class="dropdown-menu" role="menu">
                          <li><a href="schedule-list.html">Schedule List</a></li>
@@ -80,7 +91,7 @@
             (click)="onSectionClick('news')"
             class="nav-item dropdown"
           >
-            <a href="#news"> Blog</a>
+            <a routerLink="#news"> Blog</a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <!-- <ul class="dropdown-menu" role="menu">
                       <li><a href="blog.html">Blog</a></li>
@@ -92,7 +103,7 @@
             (click)="onSectionClick('directions')"
             class="nav-item"
           >
-            <a href="#directions">Contact</a>
+            <a routerLink="#directions">Contact</a>
           </li>
           <li class="header-ticket nav-item">
             <a

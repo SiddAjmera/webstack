@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "../app-routing/app-routing.module";
 import { HeadingComponent } from "./components/heading/heading.component";
@@ -25,6 +26,7 @@ import { GetThereComponent } from "./components/get-there/get-there.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { FunFactComponent } from "./components/fun-fact/fun-fact.component";
 import { SafePipe } from "./pipes/safe/safe.pipe";
+import { PptModalComponent } from "./components/ppt-modal/ppt-modal.component";
 
 @NgModule({
   imports: [CommonModule, AppRoutingModule],
@@ -51,7 +53,8 @@ import { SafePipe } from "./pipes/safe/safe.pipe";
     GetThereComponent,
     ExperienceComponent,
     FunFactComponent,
-    SafePipe
+    SafePipe,
+    PptModalComponent
   ],
   exports: [
     AppRoutingModule,
@@ -71,7 +74,9 @@ import { SafePipe } from "./pipes/safe/safe.pipe";
     SpeakerModalComponent,
     ExperienceComponent,
     FunFactComponent,
-    SafePipe
+    SafePipe,
+    FormsModule,
+    PptModalComponent
   ]
 })
 export class SharedModule {}

@@ -1,14 +1,16 @@
 import { Injectable } from "@angular/core";
-import { AngularFireDatabase } from "@angular/fire/database";
+import { AngularFireDatabase, AngularFireList } from "@angular/fire/database";
 import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root"
 })
 export class DataService {
-  items: Observable<any[]>;
+  private subscriptionEmails: AngularFireList<string>;
 
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private db: AngularFireDatabase) {
+    this.subscriptionEmails = this.db.list("subscribers");
+  }
 
   getRegisterLink(): Observable<any> {
     return this.db.object("/header/registerLink").valueChanges();
@@ -56,5 +58,13 @@ export class DataService {
 
   getQuotes(): Observable<any> {
     return this.db.object("/quotes").valueChanges();
+  }
+
+  saveSubscriptionEmail(emailToSave: string) {
+    return this.subscriptionEmails.push(emailToSave);
+  }
+
+  getMeetupById(meetupId: string) {
+    return this.db.object(`/meetups/${meetupId}`).valueChanges();
   }
 }

@@ -1,0 +1,34 @@
+<div #hero><app-hero></app-hero></div>
+
+<div #about><app-about-section></app-about-section></div>
+<div>
+  <app-fun-fact
+    *ngIf="(quotes$ | async) as quotes"
+    [quote]="quotes[0]"
+  ></app-fun-fact>
+</div>
+<div #speakers><app-speakers></app-speakers></div>
+
+<div #experience><app-experience></app-experience></div>
+
+<div #timeline><app-schedule-timeline></app-schedule-timeline></div>
+<div>
+  <app-fun-fact
+    *ngIf="(quotes$ | async) as quotes"
+    [quote]="quotes[1]"
+  ></app-fun-fact>
+</div>
+<div #news><app-news></app-news></div>
+
+<div><!-- <app-sponsors></app-sponsors> --></div>
+
+<div>
+  <app-fun-fact
+    *ngIf="(quotes$ | async) as quotes"
+    [quote]="quotes[2]"
+  ></app-fun-fact>
+</div>
+
+<div #directions>
+  <app-direction></app-direction>
+</div>

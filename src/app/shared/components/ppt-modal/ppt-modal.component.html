@@ -1,0 +1,33 @@
+<div
+  *ngIf="pptLink"
+  class="modal fade"
+  id="pptModal{{ id }}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="speakerModalModalLabel"
+  aria-hidden="true"
+>
+  <!-- <div class="speaker-modal modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="row">
+          <div class="col-lg-6 p-a-4 text-left">
+            <div class="ts-speaker-popup-content">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <iframe
+    [src]="pptLink | safe: 'resourceUrl'"
+    frameborder="0"
+    width="1440"
+    height="839"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+  ></iframe>
+</div>
