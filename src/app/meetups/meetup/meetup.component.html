@@ -42,21 +42,20 @@
                   {{ talk.level }}
                 </div>
                 <div class="schedule-slot-info">
-                  <a routerLink="./">
-                    <img
-                      class="schedule-slot-speakers"
-                      [src]="talk.image"
-                      alt="{{ talk.title }} by {{ talk.speaker }}"
-                    />
-                  </a>
+                  <img
+                    class="schedule-slot-speakers"
+                    [src]="talk.image"
+                    alt="{{ talk.title }} by {{ talk.speaker }}"
+                    data-toggle="modal"
+                    [attr.data-target]="'#speakerModal' + talk.id"
+                    data-effect="mfp-zoom-in">
+                  <app-speaker-modal [speaker]="talk"></app-speaker-modal>
                   <div class="schedule-slot-info-content">
                     <h3 class="schedule-slot-title">
                       {{ talk.title }}
                       <strong>@ {{ talk.speaker }}</strong>
-                      <strong>
-                        <button (click)="talk.show = !talk.show">
-                          {{ talk.show ? "Hide" : "Show" }} Presentation
-                        </button>
+                      <strong (click)="talk.show = !talk.show">
+                        <span class="show-ppt" >{{ talk.show ? "Hide" : "Show" }} Presentation</span>
                       </strong>
                     </h3>
                     <p>
