@@ -2289,6 +2289,7 @@ img.pull-right {
 .page-banner-area {
   position: relative;
   min-height: 400px;
+  top:80px;
   color: #fff;
   background-position: 50% 50%;
   -webkit-background-size: cover;

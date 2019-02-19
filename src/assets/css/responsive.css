@@ -543,7 +543,8 @@ tab rotate
       width: 265px;
       height: 265px; }
     .page-banner-area {
-      min-height: 300px; }
+      min-height: 300px;
+      top: 40px; }
     .page-banner-title {
       padding: 0 20px; }
       .page-banner-title h2 {
