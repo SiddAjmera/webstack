@@ -1,0 +1,13 @@
+[debug] [2019-02-19T13:15:24.965Z] ----------------------------------------------------------------------
+[debug] [2019-02-19T13:15:24.967Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-19T13:15:24.967Z] CLI Version:   6.2.2
+[debug] [2019-02-19T13:15:24.967Z] Platform:      darwin
+[debug] [2019-02-19T13:15:24.967Z] Node Version:  v11.0.0
+[debug] [2019-02-19T13:15:24.985Z] Time:          Tue Feb 19 2019 18:45:24 GMT+0530 (India Standard Time)
+[debug] [2019-02-19T13:15:24.985Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-19T13:15:25.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-19T13:15:25.013Z] > authorizing via signed-in user
+[debug] [2019-02-19T13:15:25.013Z] [iam] checking project webstack-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-19T13:15:25.015Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/webstack-site:testIamPermissions  
+
