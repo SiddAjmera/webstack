@@ -3,8 +3,8 @@
   style="background-image: url(./assets/images/funfact_bg.jpg)"
 >
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row" *ngIf="(stats$ | async) as stats">
+      <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="ts-single-funfact">
           <h3 class="funfact-num text-center">
             "<span class="counterUp">{{ quote.quote }}</span
@@ -12,16 +12,17 @@
           </h3>
           <h4 class="funfact-title text-right">{{ quote.by }}</h4>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6">
         <div class="ts-single-funfact">
           <h3 class="funfact-num">
-            <span class="counterUp" data-counter="43">43</span>+
+            <span class="counterUp">{{ stats.numberOfSpeakers }}</span
+            >+
           </h3>
           <h4 class="funfact-title">Our Visionary Speakers</h4>
         </div>
-      </div> -->
+      </div>
       <!-- col end-->
       <!-- <div class="col-lg-3 col-md-6">
         <div class="ts-single-funfact">
@@ -32,23 +33,25 @@
         </div>
       </div> -->
       <!-- col end-->
-      <!-- <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6">
         <div class="ts-single-funfact">
           <h3 class="funfact-num">
-            <span class="counterUp" data-counter="28">28</span>+
+            <span class="counterUp">{{ stats.numberOfMeetups }}</span
+            >+
           </h3>
-          <h4 class="funfact-title">Workshops We offer</h4>
+          <h4 class="funfact-title">Meetups we've had so far</h4>
         </div>
-      </div> -->
+      </div>
       <!-- col end-->
-      <!-- <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6">
         <div class="ts-single-funfact">
           <h3 class="funfact-num">
-            <span class="counterUp" data-counter="950">950</span>+
+            <span class="counterUp">{{ stats.numberOfAttendees }}</span
+            >+
           </h3>
           <h4 class="funfact-title">Event Participants</h4>
         </div>
-      </div> -->
+      </div>
       <!-- col end-->
     </div>
     <!-- row end-->

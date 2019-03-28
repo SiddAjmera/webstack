@@ -82,4 +82,8 @@ export class DataService {
   getMeetupById(meetupId: string) {
     return this.db.object(`/meetups/${meetupId}`).valueChanges();
   }
+
+  getStats() {
+    return this.db.object(`/stats`).valueChanges();
+  }
 }
