@@ -38,13 +38,15 @@
           <li routerLinkActive="active" class="dropdown nav-item">
             <a routerLink="/meetups/Feb-Angular-2019">Meetups</a>
             <!-- <i class="fa fa-angle-down"></i> -->
-            <!-- <ul class="dropdown-menu" role="menu">
-                      <li><a href="index.html">Home One</a></li>
-                      <li><a href="index-2.html">Home Two</a></li>
-                      <li><a href="index-3.html">Home Three</a></li>
-                      <li><a href="index-4.html">Home Four</a></li>
-                      <li><a href="index-5.html">Home Five</a></li>
-                   </ul> -->
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a 
+                  *ngFor="let event of eventLink$ | async" 
+                  routerLink="/meetups/{{event.id}}">
+                  {{ event.name }}
+                </a>
+              </li>
+            </ul>
           </li>
           <li
             [class.active]="activeSection === 'about'"
