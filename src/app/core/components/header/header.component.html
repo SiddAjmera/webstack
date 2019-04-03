@@ -36,13 +36,16 @@
                    </ul> -->
           </li>
           <li routerLinkActive="active" class="dropdown nav-item">
-            <a routerLink="/meetups/Feb-Angular-2019">Meetups</a>
+            <a href="#" class="" data-toggle="dropdown"
+              >Meetups <i class="fa fa-angle-down"></i
+            ></a>
             <!-- <i class="fa fa-angle-down"></i> -->
             <ul class="dropdown-menu" role="menu">
               <li>
-                <a 
-                  *ngFor="let event of eventLink$ | async" 
-                  routerLink="/meetups/{{event.id}}">
+                <a
+                  *ngFor="let event of (eventLink$ | async)"
+                  routerLink="/meetups/{{ event.id }}"
+                >
                   {{ event.name }}
                 </a>
               </li>
